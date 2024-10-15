@@ -5,9 +5,8 @@ import Img1 from '../../Images/cats/c2.jpg';
 import { loadStripe } from '@stripe/stripe-js';
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
-import axios from 'axios';
-import { toast } from 'react-toastify';
 import {UserContext} from '../ContextAPI/UserContext'
+
 
 
 const AdoptForm = ({ setShowLoginModal }) => {
@@ -51,7 +50,7 @@ const AdoptForm = ({ setShowLoginModal }) => {
   }, [user]);
 
 const makePayment = async () => {
-  const stripe = await loadStripe('pk_test_51PffNyA6tNiR1N27rHj7UwyOwk27oYTHTiZUonjP9FPt8E5d25ADFxdrW2sqPxVSA7zXizJr5X30cFCZeHQCDUrq00ODHzKKEq');
+  const stripe = await loadStripe(process.env.REACT_APP_PUBLIC_KEY);
   const body = { adoptionData: adopationForm };
   const headers = { "Content-Type": "application/json" };
 

@@ -4,7 +4,7 @@ import Stripe from 'stripe';
 import shortid from 'shortid'
 
 // Initialize Stripe with your secret key
-const stripe = new Stripe('sk_test_51PffNyA6tNiR1N27VEbMUDhw85KLmmfN634y3RoEWynmevPyMSLJN3l6mmz3vDM1o4c2Q2A0eDSgGFOGOcqDYWfq00m3mNAQmN');
+const stripe = new Stripe(process.env.Stripe_Key);
 
 // Initialize multer for file uploads
 const upload = multer({
