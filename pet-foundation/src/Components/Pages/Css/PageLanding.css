@@ -1,13 +1,13 @@
 .page-banner {
-    background: var(--col);
-    background-image: url('../../../Images/hero-static-bg.png');
+    background: #e3e3fd !important;
+    background-image: url('../../../Images/hero-static-bg.png') !important;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 280px;
     position: relative;
     border-radius: 6px;
-    margin: 10rem 3rem 5rem 3rem;
+    margin: 10rem 3rem 1.6rem 3rem;
 
 }
 

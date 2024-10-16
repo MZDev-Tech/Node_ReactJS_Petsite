@@ -157,19 +157,28 @@
         flex-direction: column;
         justify-content: start;
     }
+    .about-left .img{
+        margin-right: 0;
+    }
     
+    .about-left .img .img1{
+       display: none !important;
+    }
+    .about-left .img .img-small{
+    display:block !important;
+    }
     .about-left, .about-right{
         width:100%;
       
     }
 
     .about-right{
-        margin-top: 36px;
+        margin-top: 10px;
     }
 
-    .about-left .img .img1{
+    .about-left .img .img-small{
         width:100%;
-        margin: 0 20px;
+        margin: 0;
     }
     
     

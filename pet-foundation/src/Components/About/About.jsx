@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import './About.css';
 import about2 from '../../Images/Ab3.png';
+import aboutSmall from '../../Images/AbBg2.png';
 import { motion } from "framer-motion"
 import LibraryAddCheckOutlinedIcon from '@mui/icons-material/LibraryAddCheckOutlined';
 
@@ -39,6 +40,19 @@ const About = () => {
                             src={about2} alt="about-image" className="img1" />
                             
                             
+                            <motion.img
+                                initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{
+                                    delay: 1,
+                                    x: { type: "spring", stiffness: 20 },
+                                    opacity: { duration: 1 },
+                                    ease: "easeIn",
+                                    duration: 1,
+                                }}
+                                viewport={{ once: false, amount: 0.1 }}
+                                src={aboutSmall} alt="about-image-small" className="img-small" style={{ display: 'none' }} /> 
+                        
                         </div>
                     </div>
 
