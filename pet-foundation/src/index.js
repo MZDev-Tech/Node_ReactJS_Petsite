@@ -13,9 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <UserContextProvider>
     <App/>
-    <ToastContainer 
-    bodyClassName="toastBody"
-    />
+    <ToastContainer bodyClassName="toastBody"/>
 
     </UserContextProvider>
 

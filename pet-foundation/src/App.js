@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense, useTransition } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Preloader from './Components/Preloader/Preloader';
 import Scroll from './Components/ScrollToTop/Scroll';
 
