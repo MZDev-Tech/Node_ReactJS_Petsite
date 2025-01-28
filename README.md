@@ -1,5 +1,6 @@
-Pet Adoption Website!
-This project is designed to connect users with their ideal pets and provide a seamless online pet adoption experience. Built using React.js & Node.js, the platform also includes an Admin Panel to manage the website efficiently.
+## Pet Adoption Website
+
+Welcome to the Pet Adoption Website! This project is designed to connect users with their ideal pets and provide a seamless online pet adoption experience. Built using React.js, Node.js, and Laravel, the platform also includes an Admin Panel to manage the website efficiently.
 
 
 ## Features
